@@ -22,6 +22,7 @@ WORKDIR /home/coredns
 RUN mkdir bin conf
 
 COPY --chown=coredns:coredns --from=coredns /code/coredns/coredns bin
+WORKDIR /home/coredns/conf
 
 
 ENTRYPOINT [ "/home/coredns/coredns" ]
