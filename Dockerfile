@@ -25,4 +25,4 @@ COPY --chown=coredns:coredns --from=coredns /code/coredns/coredns bin
 WORKDIR /home/coredns/conf
 
 
-ENTRYPOINT [ "/home/coredns/coredns" ]
+ENTRYPOINT [ "/home/coredns/bin/coredns" ]
